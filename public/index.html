@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" ng-app="contatooh">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Mean Stack</title>
 </head>
-<body>
-    <h1>Hello World</h1>
+<body ng-controller="ContatosController">
+    <div ng-view></div>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controllers/ContatosController.js"></script>
+    <script src="js/controllers/ContatoController.js"></script>
 </body>
 </html>
