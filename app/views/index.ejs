@@ -1,3 +1,4 @@
+<!-- public/index.html -->
 <!doctype html>
 <html ng-app="contatooh">
   <head>
@@ -11,7 +12,16 @@
   </head>
   
   <body class="container">
-
+    <%if (usuarioLogado.length > 0) { %>
+      <div class="text-right"> 
+        <p>
+          Logado como: <span id="usuario-logado">
+                <%=usuarioLogado %>
+         <span>
+         <a href="/logout">Logout</a>
+        </p>  
+      </div>
+    <% } %>
     <div ng-view></div>
 	
   	<script src="vendor/angular/angular.js"></script>
@@ -19,6 +29,7 @@
     <script src="vendor/angular-resource/angular-resource.js"></script>
   	<script src="js/main.js"></script>
     <script src="js/services/ContatoService.js"></script>
+    <script src="js/services/InterceptorService.js"></script>
   	<script src="js/controllers/ContatosController.js"></script>
   	<script src="js/controllers/ContatoController.js"></script>
 
