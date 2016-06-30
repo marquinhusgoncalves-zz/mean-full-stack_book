@@ -1,5 +1,5 @@
 angular.module('contatooh').controller('ContatosController', 
-  function(Contato, $scope) { 
+  ["Contato", "$scope", function(Contato, $scope) { 
     $scope.contatos = [];
 
     $scope.filtro = '';
@@ -33,4 +33,4 @@ angular.module('contatooh').controller('ContatosController',
         }
       );
     }; 
-});
+}]);

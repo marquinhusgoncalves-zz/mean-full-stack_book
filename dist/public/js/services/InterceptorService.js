@@ -1,4 +1,4 @@
-angular.module('contatooh').factory('meuInterceptor', function($q, $location) {  
+angular.module('contatooh').factory('meuInterceptor', ["$q", "$location", function($q, $location) {  
 
     var meuInterceptor = {
     	responseError: function(resposta) {
@@ -10,4 +10,4 @@ angular.module('contatooh').factory('meuInterceptor', function($q, $location) {
     }
 
     return meuInterceptor;
-});
+}]);
