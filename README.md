@@ -23,4 +23,8 @@ $ npm start or node server.js
 
 http://localhost:3000/
 
+Start Karma Test:
 
+```sh
+$ karma start config/karma.config.js
+```
