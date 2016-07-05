@@ -28,3 +28,16 @@ Start Karma Test:
 ```sh
 $ karma start config/karma.config.js
 ```
+
+Start Selenium Server:
+
+```sh
+$ webdriver-manager start
+```
+
+Protractor (Selenium Server rodando):
+Obs.: Esse comando tem que ser dentro da pasta de teste e2e.
+
+```sh
+$ protractor config/protractor.js
+```
