@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ###Node###
 
 # Logs
@@ -28,3 +29,8 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+=======
+.DS_Store
+/node_modules
+/public/vendor
+>>>>>>> 3e572a2ccd9f4e40851d0ce2a8021f8f153e455e
