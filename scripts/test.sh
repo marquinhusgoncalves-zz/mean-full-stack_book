@@ -1,0 +1,6 @@
+export NODE_ENV=development
+export CLIENT_ID=seuClientId
+export CLIENT_SECRET=seuClientSecret
+export SELENIUM_USER=suaContaGithub  
+export SELENIUM_USER_PASSWORD=seuPassWordGitHub
+protractor config/protractor.js

@@ -1,0 +1,4 @@
+export NODE_ENV=development
+export CLIENT_ID=seuClientId
+export CLIENT_SECRET=seuClientSecret
+node server
