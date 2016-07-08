@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marquinhusgoncalves/mean-full-stack_book.svg?branch=master)](https://travis-ci.org/marquinhusgoncalves/mean-full-stack_book)
+
 #Estudos com o Livro da Casa Do Código
 ####[Full stack JavaScript para aplicações web com MongoDB, Express, Angular e Node](https://www.casadocodigo.com.br/products/livro-mean)
 
