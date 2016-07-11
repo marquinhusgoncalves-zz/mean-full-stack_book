@@ -14,6 +14,16 @@
 <p ng-show="contatos.length">
   Contatos cadastrados: {{contatos.length}}
 </p>
+
+<meu-painel titulo="Listagem de contatos">
+  <!-- apenas a div da tabela dentro da diretiva -->
+  <div class="table-responsive">
+    <table class="table table-hover">
+    <!-- dados da tabela omitido -->
+    </table>
+  </div>
+</meu-painel>
+
 <p class="text-info" ng-hide="contatos.length">
     Não há contatos cadastrados
 </p>
@@ -35,11 +45,8 @@
   		<td>{{contato.email}}</td>
       <td>{{contato.emergencia.nome}}</td>
   		<td class="text-center">
-  			<button  
-          ng-click="remove(contato)" 
-          class="btn btn-warning">
-  				  Remover
-  			</buttom> 
+  		  <meu-botao-aviso nome="Remover" acao="remove(contato)">
+          </meu-botao-aviso>
   		</td>
   	</tr>
   </table>
