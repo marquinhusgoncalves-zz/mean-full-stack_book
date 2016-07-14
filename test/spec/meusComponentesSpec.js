@@ -47,3 +47,21 @@ describe('meuFocus', function() {
           .text()).toBe('Voltar');
   });
 });
+
+describe('meuPainel', function() {
+  var $scope;
+  var element;
+  
+  beforeEach(function() {
+    module('meusComponentes');
+    module('templates');
+    inject(function($compile, $rootScope) {
+      $scope = $rootScope.$new();
+      element = angular.element(
+        '<meu-painel titulo="Principal"><p>Oi</p></meu-painel>'
+      );
+      $compile(element)($scope);
+      $scope.$digest();
+    });
+  });
+});
